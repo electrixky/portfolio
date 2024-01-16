@@ -11,7 +11,7 @@ import {Footer} from "./layout/footer/Footer";
 
 function App() {
     return (
-        <div className="App">
+        <StyledApp className="App">
             <Header/>
             <Main/>
             <Skills/>
@@ -19,8 +19,12 @@ function App() {
             <Testimony/>
             <Contact/>
             <Footer/>
-        </div>
+        </StyledApp>
     );
 }
 
+const StyledApp = styled.div`
+  background-color: #000;
+  color: #fff;
+`
 export default App;
