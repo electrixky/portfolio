@@ -13,8 +13,9 @@ export const Main = () => {
                 <FlexWrapper direction={"column"} justify={"center"} align={"center"} wrap={"nowrap"}>
                     <Greeting>HI, I'M</Greeting>
                     <Name>TETIANA TKACHUK</Name>
-                    <h1>a Web Developer</h1>
+                    <Title>a Web Developer</Title>
                     <Button>Contact</Button>
+                    <Icon iconId={"scroll"} width={"50"} height={"100"} viewBox={"0 0 50 100"}/>
                 </FlexWrapper>
                 <Icon iconId={"sky2"} width={"509"} height={"576"} viewBox={"0 0 509 576"}/>
                 {/*<div style={{position: "relative"}}>*/}
@@ -28,7 +29,7 @@ export const Main = () => {
 };
 
 const StyledMain = styled.main`
-  min-height: 100vh;
+  min-height: 90vh;
   text-align: center;
 `
 
@@ -41,10 +42,14 @@ const Name = styled.h2`
   font-family: "Organic Relief", sans-serif;
   font-size: 4rem;
   line-height: 8rem;
+  margin-bottom: 15px;
+`
+const Title = styled.h1`
+  margin-bottom: 25px;
 `
 
-const Astronaut = styled.img`
-  position: absolute;
-  top: 170px;
-  right: 210px
-`
+// const Astronaut = styled.img`
+//   position: absolute;
+//   top: 170px;
+//   right: 210px
+// `
