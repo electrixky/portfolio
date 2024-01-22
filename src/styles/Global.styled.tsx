@@ -2,7 +2,7 @@ import {createGlobalStyle} from "styled-components";
 import {Theme} from "./Theme";
 
 export const GlobalStyles = createGlobalStyle`
-  
+
   *,
   *::before,
   *::after {
@@ -22,23 +22,39 @@ export const GlobalStyles = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  
+
   a {
     text-decoration: none;
     color: unset;
   }
-  
+
   ul {
     list-style: none;
   }
-  
+
   button {
     background-color: unset;
     border: unset;
-    
+    font-family: Inter, sans-serif;
+
     &:hover {
       cursor: pointer;
     }
+  }
+
+  section {
+    background-color: ${Theme.colors.primary};
+  }
+
+  h3 {
+    font-size: 22px;
+    font-family: Inter, sans-serif;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: Inter, sans-serif;
   }
 
 `

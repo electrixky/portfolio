@@ -31,7 +31,6 @@ export const Skills = () => {
 };
 
 const StyledSkills = styled.section`
-  background-color: ${Theme.colors.primary};
   min-height: 90vh;
   position: relative;
 `
