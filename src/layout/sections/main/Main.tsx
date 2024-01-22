@@ -4,6 +4,8 @@ import styled from "styled-components";
 import Icon from "../../../components/icon/Icon";
 import {Button} from "../../../components/Button";
 import astronaut from "../../../assets/images/astronaut.png"
+import {Socials} from "../../../components/socials/Socials";
+
 
 export const Main = () => {
     return (
@@ -14,8 +16,9 @@ export const Main = () => {
                     <Greeting>HI, I'M</Greeting>
                     <Name>TETIANA TKACHUK</Name>
                     <Title>a Web Developer</Title>
-                    <Button>Contact</Button>
-                    <Icon iconId={"scroll"} width={"50"} height={"100"} viewBox={"0 0 50 100"}/>
+                    <Button marginBottom={"2rem"}>Contact</Button>
+                    <Socials/>
+                    <ScrollButton><Icon iconId={"scroll"} width={"50"} height={"100"} viewBox={"0 0 50 100"}/></ScrollButton>
                 </FlexWrapper>
                 <Icon iconId={"sky2"} width={"509"} height={"576"} viewBox={"0 0 509 576"}/>
                 {/*<div style={{position: "relative"}}>*/}
@@ -46,6 +49,10 @@ const Name = styled.h2`
 `
 const Title = styled.h1`
   margin-bottom: 25px;
+`
+
+const ScrollButton = styled.button`
+  margin-top: 2rem;
 `
 
 // const Astronaut = styled.img`

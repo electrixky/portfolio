@@ -1,8 +1,19 @@
 import styled from "styled-components";
 
-export const Button = styled.button`
-  color: #000;
-  background-color: #fff;
-  border-radius: 5px;
-  padding: 5px 10px;
+type ButtonType = {
+    color?: string,
+    background?: string,
+    border?: string,
+    marginBottom?: string,
+}
+
+export const Button = styled.button<ButtonType>`
+  color: ${props => props.color || "#000"};
+  background-color: ${props => props.background || "#fff"};
+  border: ${props => props.border || "none"};
+  border-radius: 10px;
+  padding: 15px 40px;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: ${props => props.marginBottom || "1rem"};
 `

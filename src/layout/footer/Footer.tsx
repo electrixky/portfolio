@@ -3,6 +3,7 @@ import styled from "styled-components";
 import {Logo} from "../../components/logo/Logo";
 import Icon from "../../components/icon/Icon";
 import {FlexWrapper} from "../../components/FlexWrapper";
+import {Socials} from "../../components/socials/Socials";
 
 export const Footer = () => {
     return (
@@ -10,28 +11,7 @@ export const Footer = () => {
             <FlexWrapper align={"center"}>
                 <Logo/>
                 <Name>Tanya Tkachuk</Name>
-                <SocialList>
-                    <SocialItem>
-                        <SocialLink>
-                            <Icon height={"20px"} iconId={"github"}/>
-                        </SocialLink>
-                    </SocialItem>
-                    <SocialItem>
-                        <SocialLink>
-                            <Icon height={"20px"} iconId={"telegram"}/>
-                        </SocialLink>
-                    </SocialItem>
-                    <SocialItem>
-                        <SocialLink>
-                            <Icon height={"20px"} iconId={"github"}/>
-                        </SocialLink>
-                    </SocialItem>
-                    <SocialItem>
-                        <SocialLink>
-                            <Icon height={"20px"} iconId={"telegram"}/>
-                        </SocialLink>
-                    </SocialItem>
-                </SocialList>
+                <Socials/>
             </FlexWrapper>
             <Copyright>2024 Tetiana Tkachuk, All Rights Reserved</Copyright>
         </StyledFooter>
@@ -44,18 +24,6 @@ const StyledFooter = styled.footer`
   min-height: 20vh;
 `
 const Name = styled.h5`
-
-`
-const SocialList = styled.ul`
-  display: flex;
-  gap: 10px;
-`
-
-const SocialItem = styled.li`
-
-`
-
-const SocialLink = styled.a`
 
 `
 

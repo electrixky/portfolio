@@ -14,6 +14,7 @@ export const GlobalStyles = createGlobalStyle`
   body {
     color: ${Theme.colors.secondary};
     background-color: ${Theme.colors.primary};
+    line-height: 1.2;
     margin: 0;
     font-family: 'Roboto Serif', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -34,6 +35,10 @@ export const GlobalStyles = createGlobalStyle`
   button {
     background-color: unset;
     border: unset;
+    
+    &:hover {
+      cursor: pointer;
+    }
   }
 
 `
