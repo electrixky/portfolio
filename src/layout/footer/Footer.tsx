@@ -8,23 +8,22 @@ import {Socials} from "../../components/socials/Socials";
 export const Footer = () => {
     return (
         <StyledFooter>
-            <FlexWrapper align={"center"}>
+            <FlexWrapper align={"center"} direction={"column"} gap={"30px"}>
                 <Logo/>
                 <Name>Tanya Tkachuk</Name>
                 <Socials/>
+                <Copyright>© 2024 Tetiana Tkachuk, All Rights Reserved</Copyright>
             </FlexWrapper>
-            <Copyright>2024 Tetiana Tkachuk, All Rights Reserved</Copyright>
         </StyledFooter>
     );
 };
 
 
 const StyledFooter = styled.footer`
-  background-color: #6051a1;
-  min-height: 20vh;
+  padding: 40px 0;
 `
 const Name = styled.h5`
-
+  font-size: 1.2rem;
 `
 
 const Copyright = styled.small`

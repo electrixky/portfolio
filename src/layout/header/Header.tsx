@@ -6,6 +6,7 @@ import {Container} from "../../components/Container";
 import {Theme} from "../../styles/Theme";
 import Icon from "../../components/icon/Icon";
 import {FlexWrapper} from "../../components/FlexWrapper";
+import {MobileMenu} from "../../components/menu/MobileMenu";
 
 const items = ["Home", "Skills", "Projects", "Testimony", "Contact"]
 export const Header = () => {
@@ -17,6 +18,7 @@ export const Header = () => {
                     <div>
                         <FlexWrapper gap={"30px"} align={"center"}>
                             <Menu menuItems={items}/>
+                            <MobileMenu menuItems={items}/>
                             <Icon iconId={"mode"} height={"30"} width={"30"} viewBox={"0 0 30 30"}/>
                             <Icon iconId={"lang"} height={"30"} width={"30"} viewBox={"0 0 30 30"}/>
                         </FlexWrapper>

@@ -83,7 +83,6 @@ const Link = styled.a`
   border-radius: 5px;
 
   &:hover {
-    cursor: pointer;
     color: ${Theme.colors.primary};
     background-color: ${Theme.colors.secondary};
   }

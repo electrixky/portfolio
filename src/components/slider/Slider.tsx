@@ -2,16 +2,15 @@ import React from 'react';
 import styled from "styled-components";
 import {Comment} from "../../layout/sections/testimony/Comment";
 import {FlexWrapper} from "../FlexWrapper";
+import {Theme} from "../../styles/Theme";
 
 export const Slider = () => {
     return (
         <StyledSlider>
-            <FlexWrapper>
-                <Comment/>
-            </FlexWrapper>
+            <Comment/>
             <Pagination>
                 <span></span>
-                <span></span>
+                <span className={"active"}></span>
                 <span></span>
             </Pagination>
         </StyledSlider>
@@ -20,16 +19,23 @@ export const Slider = () => {
 
 const StyledSlider = styled.div`
   border: 2px solid black;
-  max-width: 50vw;
 `
 
 const Pagination = styled.div`
+  margin-top: 30px;
+  
   span {
     display: inline-block;
-    width: 20px;
+    width: 10px;
     height: 10px;
     margin: 5px;
-    background-color: #fff;
+    border-radius: 20px;
+    background-color: ${Theme.colors.hoverColor};
+
+    &.active {
+      background-color: ${Theme.colors.secondary};
+      width: 30px;
+    }
   }
 `
 

@@ -55,6 +55,11 @@ export const GlobalStyles = createGlobalStyle`
     font-weight: 400;
     font-size: 16px;
     font-family: Inter, sans-serif;
+    line-height: 1.3;
+  }
+
+  a:hover {
+    cursor: pointer;
   }
 
 `

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {Theme} from "../styles/Theme";
 
 type ButtonType = {
     color?: string,
