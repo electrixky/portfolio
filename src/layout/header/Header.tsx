@@ -19,8 +19,10 @@ export const Header = () => {
                         <FlexWrapper gap={"30px"} align={"center"}>
                             <Menu menuItems={items}/>
                             <MobileMenu menuItems={items}/>
-                            <Icon iconId={"mode"} height={"30"} width={"30"} viewBox={"0 0 30 30"}/>
-                            <Icon iconId={"lang"} height={"30"} width={"30"} viewBox={"0 0 30 30"}/>
+                            <IconWrapper>
+                                <Icon iconId={"mode"} height={"30"} width={"30"} viewBox={"0 0 30 30"}/>
+                                <Icon iconId={"lang"} height={"30"} width={"30"} viewBox={"0 0 30 30"}/>
+                            </IconWrapper>
                         </FlexWrapper>
                     </div>
                 </FlexWrapper>
@@ -34,4 +36,14 @@ const StyledHeader = styled.header`
   color: ${Theme.colors.secondary};
   font-size: 20px;
   padding: 20px;
+`
+
+const IconWrapper = styled.div`
+  display: flex;
+  gap: 20px;
+  
+  @media ${Theme.media.tablet} {
+    margin-right: 40px;
+  }
+   
 `

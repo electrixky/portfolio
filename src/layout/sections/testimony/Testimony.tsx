@@ -12,7 +12,7 @@ export const Testimony = () => {
         <StyledTestimony>
             <Container>
                 <SectionTitle marginBottom={"5rem"}>Testimony</SectionTitle>
-                <FlexWrapper justify={"space-between"} align={"center"}>
+                <FlexWrapper justify={"space-between"} align={"center"} gap={"50px"}>
                     <Image src={astronaut} alt=""/>
                     <Slider/>
                 </FlexWrapper>

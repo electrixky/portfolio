@@ -17,7 +17,7 @@ export const Comment = () => {
 };
 
 const StyledComment = styled.div`
-  max-width: 70%;
+  
 `
 
 const Author = styled.span`
