@@ -45,7 +45,8 @@ const StyledMain = styled.main`
 `
 
 const Greeting = styled.span`
-  ${font({family: '"Sugarpunch", sans-serif', Fmax: 42, Fmin: 24})}
+  ${font({family: '"Sugarpunch", sans-serif', Fmax: 42, Fmin: 24})};
+  margin-top: 30px;
 `
 
 const Name = styled.h2`

@@ -2,14 +2,19 @@ import React from 'react';
 import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 
-export const Comment = () => {
+type CommentPropsType = {
+    title: string,
+    text: string,
+    userName: string
+}
+export const Comment = (props: CommentPropsType) => {
     return (
         <StyledComment>
             <FlexWrapper gap={"50px"} justify={"space-between"} align={"flex-start"}>
-                <Author>John Doe</Author>
+                <Author>{props.userName}</Author>
                 <FlexWrapper direction={"column"} justify={"space-between"}>
-                    <Title>Amazing work!</Title>
-                    <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam beatae commodi culpa molestiae nihil odit quaerat quasi quidem tenetur totam.</Text>
+                    <Title>{props.title}</Title>
+                    <Text>{props.text}</Text>
                 </FlexWrapper>
             </FlexWrapper>
         </StyledComment>

@@ -1,17 +1,16 @@
 import React from 'react';
-import styled from "styled-components";
 import {Logo} from "../../components/logo/Logo";
 import {Menu} from "../../components/menu/Menu";
 import {Container} from "../../components/Container";
-import {Theme} from "../../styles/Theme";
 import Icon from "../../components/icon/Icon";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {MobileMenu} from "../../components/menu/MobileMenu";
+import {S} from './Header_Styles'
 
 const items = ["Home", "Skills", "Projects", "Testimony", "Contact"]
-export const Header = () => {
+export const Header: React.FC = () => {
     return (
-        <StyledHeader>
+        <S.Header>
             <Container>
                 <FlexWrapper justify={"space-between"}>
                     <Logo/>
@@ -19,31 +18,16 @@ export const Header = () => {
                         <FlexWrapper gap={"30px"} align={"center"}>
                             <Menu menuItems={items}/>
                             <MobileMenu menuItems={items}/>
-                            <IconWrapper>
+                            <S.IconWrapper>
                                 <Icon iconId={"mode"} height={"30"} width={"30"} viewBox={"0 0 30 30"}/>
                                 <Icon iconId={"lang"} height={"30"} width={"30"} viewBox={"0 0 30 30"}/>
-                            </IconWrapper>
+                            </S.IconWrapper>
                         </FlexWrapper>
                     </div>
                 </FlexWrapper>
             </Container>
-        </StyledHeader>
+        </S.Header>
     );
 };
 
 
-const StyledHeader = styled.header`
-  color: ${Theme.colors.secondary};
-  font-size: 20px;
-  padding: 20px;
-`
-
-const IconWrapper = styled.div`
-  display: flex;
-  gap: 20px;
-  
-  @media ${Theme.media.tablet} {
-    margin-right: 40px;
-  }
-   
-`
